@@ -1,4 +1,4 @@
-FROM nginx:1.15
+FROM nginx:latest
 
 RUN useradd -u 1001 -r -g 0 -d /app -s /sbin/nologin -c "Default Application User" default \
 && mkdir -p /app \
